@@ -51,8 +51,8 @@ SHORTENER_PIC = os.environ.get("SHORTENER_PIC", "https://telegra.ph/file/ec17880
 #--------------------------------------------
 
 #--------------------------------------------
-CONTACT_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @IG_MENTOR\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/ONLYNAMAN>NAMAN MATHUR</a></blockquote></b>"
-NETWORK_TXT = "<b><blockquote> <a href=https://t.me/ONLYNAMAN>NAMAN</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/PURUSHSEVA>PURUSH SEVA</a>\n◈ PREMIUM VIDEOS : <a href=https://t.me/ONLIMEMBERS>ONLY MEMBERS</a>\n◈ DAILY POSTING : <a href=https://t.me/PURUSHSEVA>PURUSH SEVA</a>\n◈\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/ONLYNAMAN>NAMAN MATHUR</a></blockquote></b>"
+HELP_TXT = "<b><blockquote>ᴛʜɪs ɪs ᴀɴ ғɪʟᴇ ᴛᴏ ʟɪɴᴋ ʙᴏᴛ ᴡᴏʀᴋ ғᴏʀ @IG_MENTOR\n\n❏ ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs\n├/start : sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ\n├/about : ᴏᴜʀ Iɴғᴏʀᴍᴀᴛɪᴏɴ\n└/help : ʜᴇʟᴘ ʀᴇʟᴀᴛᴇᴅ ʙᴏᴛ\n\n sɪᴍᴘʟʏ ᴄʟɪᴄᴋ ᴏɴ ʟɪɴᴋ ᴀɴᴅ sᴛᴀʀᴛ ᴛʜᴇ ʙᴏᴛ ᴊᴏɪɴ ʙᴏᴛʜ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ ᴛʜᴀᴛs ɪᴛ.....!\n\n ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ <a href=https://t.me/ONLYNAMAN>NAMAN MATHUR</a></blockquote></b>"
+ABOUT_TXT = "<b><blockquote> <a href=https://t.me/ONLYNAMAN>NAMAN</a>\n◈ ꜰᴏᴜɴᴅᴇʀ ᴏꜰ : <a href=https://t.me/PURUSHSEVA>PURUSH SEVA</a>\n◈ PREMIUM VIDEOS : <a href=https://t.me/ONLIMEMBERS>ONLY MEMBERS</a>\n◈ DAILY POSTING : <a href=https://t.me/PURUSHSEVA>PURUSH SEVA</a>\n◈\n◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=https://t.me/ONLYNAMAN>NAMAN MATHUR</a></blockquote></b>"
 #--------------------------------------------
 #--------------------------------------------
 #--------------------------------------------
