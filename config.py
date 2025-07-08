@@ -39,7 +39,7 @@ BAN_SUPPORT = os.environ.get("BAN_SUPPORT", "https://t.me/ig_mentor")
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "200"))
 #--------------------------------------------
 START_PIC = os.environ.get("START_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
-FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/4d7422653d503323e5ea3-a052ff4a5865c7c375.png")
+FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
 
 #--------------------------------------------
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://shortner.in/")
@@ -47,7 +47,7 @@ SHORTLINK_API = os.environ.get("SHORTLINK_API", "042f4ce73c78e0ec57e239ea5b23e77
 TUT_VID = os.environ.get("TUT_VID","https://t.me/TEAM_G_SHIT")
 SHORT_MSG = "<b>⌯ Here is Your Download Link, Must Watch Tutorial Before Clicking On Download...</b>"
 
-SHORTENER_PIC = os.environ.get("SHORTENER_PIC", "https://telegra.ph/file/ec17880d61180d3312d6a.jpg")
+SHORTENER_PIC = os.environ.get("SHORTENER_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
 #--------------------------------------------
 
 #--------------------------------------------
