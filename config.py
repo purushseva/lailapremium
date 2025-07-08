@@ -40,7 +40,7 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/987fa30dcd3bb740
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/987fa30dcd3bb7409fe89-d4f27e55ed16869ef1.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://reel2earn.com/")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "reel2earn.com")
 SHORTLINK_API = os.environ.get("SHORTLINK_API", "b85456067b2d29d61b6a72e5f2cfebdfcfdf0c36")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 30000) ) # Add time in seconds
 TUT_VID = os.environ.get("TUT_VID","https://t.me/TEAM_G_SHIT")
