@@ -42,9 +42,9 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/693d6cacfd107548
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "reel2earn.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "b85456067b2d29d61b6a72e5f2cfebdfcfdf0c36")
-TUT_VID = os.environ.get("TUT_VID","https://t.me/TEAM_G_SHIT")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
+TUT_VID = os.environ.get("TUT_VID","")
 SHORT_MSG = "<b>⌯ Here is Your Download Link, Must Watch Tutorial Before Clicking On Download...</b>"
 
 SHORTENER_PIC = os.environ.get("SHORTENER_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
