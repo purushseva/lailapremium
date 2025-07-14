@@ -42,9 +42,9 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/693d6cacfd107548
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
-TUT_VID = os.environ.get("TUT_VID","")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkshortify.com")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "bd4b2bc9904ddb2dfd6b6979620b5d3612df59da")
+TUT_VID = os.environ.get("TUT_VID","bd4b2bc9904ddb2dfd6b6979620b5d3612df59da")
 SHORT_MSG = "<b>⌯ Here is Your Download Link, Must Watch Tutorial Before Clicking On Download...</b>"
 
 SHORTENER_PIC = os.environ.get("SHORTENER_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
