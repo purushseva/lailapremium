@@ -40,8 +40,8 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/987fa30dcd3bb740
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/987fa30dcd3bb7409fe89-d4f27e55ed16869ef1.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkshortify.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "bd4b2bc9904ddb2dfd6b6979620b5d3612df59da")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "linkbyte.in")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "ef5907e87a8bbfa0d6bbc4fde08b850bcd680d58)
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 90000) ) # Add time in seconds
 TUT_VID = os.environ.get("TUT_VID","https://t.me/TEAM_G_SHIT")
 
