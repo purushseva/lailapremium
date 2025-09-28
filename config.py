@@ -23,7 +23,7 @@ APP_ID = int(os.environ.get("APP_ID", "22994386")) #Your API ID from my.telegram
 API_HASH = os.environ.get("API_HASH", "f0df608144a804dfad6f5d318e7e6465") #Your API Hash from my.telegram.org
 #--------------------------------------------
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002589128581")) #Your db channel Id
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002877041394")) #Your db channel Id
 OWNER = os.environ.get("OWNER", "ig_mentor") # Owner username without @
 OWNER_ID = int(os.environ.get("OWNER_ID", "6106604771")) # Owner id
 #--------------------------------------------
@@ -42,8 +42,8 @@ START_PIC = os.environ.get("START_PIC", "https://graph.org/file/693d6cacfd107548
 FORCE_PIC = os.environ.get("FORCE_PIC", "https://graph.org/file/693d6cacfd107548f1fc4-98841b25c21f252ec9.jpg")
 
 #--------------------------------------------
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "https://bharatlinks.com/")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "5fa07641bea52058f7ecb7d387ae83c969207273")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 TUT_VID = os.environ.get("TUT_VID","https://t.me/TEAM_G_SHIT/4")
 SHORT_MSG = "<b>⌯ Here is Your Download Link, Must Watch Tutorial Before Clicking On Download...</b>"
 
