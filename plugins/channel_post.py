@@ -10,7 +10,7 @@ from config import *
 from helper_func import encode, admin
 
 
-# Use a command instead of catching every message
+# ✅ Use /store command (no auto-generation)
 @Bot.on_message(filters.private & admin & filters.command("store"))
 async def channel_post(client: Client, message: Message):
     if not message.reply_to_message:
