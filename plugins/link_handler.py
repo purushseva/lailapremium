@@ -39,7 +39,5 @@ async def handle_links(client, message):
         except Exception as e:
             await message.reply(f"❌ Error while processing: `{e}`")
 
-    else:
-        await message.reply(
-            "⚠️ Please send a valid Telegram link (e.g., https://t.me/channel/12345 or bot deep-link)"
-        )
+    # ❌ Removed spamming else
+    # Now the bot will just IGNORE invalid messages instead of replying
