@@ -9,43 +9,33 @@ from bot import Bot
 from config import *
 from helper_func import encode, admin
 
-
-# ✅ Use /store command (no auto-generation)
-@Bot.on_message(filters.private & admin & filters.command("store"))
+@Bot.on_message(filters.private & admin & ~filters.command([
+    'start', 'commands','users','broadcast','batch', 'custom_batch', 'genlink',
+    'stats', 'dlt_time', 'check_dlt_time', 'dbroadcast', 'ban', 'unban', 'banlist',
+    'addchnl', 'delchnl', 'listchnl', 'fsub_mode', 'pbroadcast', 'add_admin',
+    'deladmin', 'admins', 'addpremium', 'premium_users', 'remove_premium',
+    'myplan', 'count'
+]))
 async def channel_post(client: Client, message: Message):
-    if not message.reply_to_message:
-        return await message.reply("❌ Please reply to a file/message with `/store`.")
-
-    reply_text = await message.reply_text("📥 Processing...", quote=True)
-
+    reply_text = await message.reply_text("Please Wait...!", quote=True)
     try:
-        # Copy the replied message to DB channel
-        post_message = await message.reply_to_message.copy(
-            chat_id=client.db_channel.id,
-            disable_notification=True
-        )
+        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
     except FloodWait as e:
         await asyncio.sleep(e.x)
-        post_message = await message.reply_to_message.copy(
-            chat_id=client.db_channel.id,
-            disable_notification=True
-        )
+        post_message = await message.copy(chat_id=client.db_channel.id, disable_notification=True)
     except Exception as e:
         print(e)
-        return await reply_text.edit_text("⚠️ Something went wrong!")
-
-    # Generate sharable link
+        await reply_text.edit_text("Something went Wrong..!")
+        return
     converted_id = post_message.id * abs(client.db_channel.id)
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
 
-    reply_markup = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]]
-    )
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("🔁 Share URL", url=f'https://telegram.me/share/url?url={link}')]])
 
     await reply_text.edit(
-        f"<b>✅ Here is your link</b>\n\n{link}",
+        f"<b>Here is your link</b>\n\n{link}",
         reply_markup=reply_markup,
         disable_web_page_preview=True
     )
