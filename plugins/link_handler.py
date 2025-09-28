@@ -5,12 +5,17 @@ import re
 async def handle_links(client, message):
     text = message.text.strip()
 
-    # Only process t.me links with message ID
-    if re.match(r"^https://t.me/.+/\d+$", text):
+    # Match channel/group message links OR bot deep-links
+    if re.match(r"^https://t\.me/(c/\d+/\d+|[A-Za-z0-9_]+/\d+|[A-Za-z0-9_]+\?start=.*)$", text):
         await message.reply("🔄 Processing your link...")
 
         try:
-            # Example: https://t.me/channelusername/1234
+            if "?start=" in text:
+                # It's a bot deep-link, just return/copy it
+                await message.reply(f"✅ Bot link received!\n\n🔗 {text}")
+                return
+
+            # Else: process channel/group message links
             parts = text.replace("https://t.me/", "").split("/")
             chat_id = parts[0]
             msg_id = int(parts[1])
@@ -35,4 +40,6 @@ async def handle_links(client, message):
             await message.reply(f"❌ Error while processing: `{e}`")
 
     else:
-        await message.reply("⚠️ Please send a valid Telegram link (e.g., https://t.me/channel/12345)")
+        await message.reply(
+            "⚠️ Please send a valid Telegram link (e.g., https://t.me/channel/12345 or bot deep-link)"
+        )
